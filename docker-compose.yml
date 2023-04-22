@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  link_crawler:
+    build:
+      context: ./
+    volumes:
+      - ./app:/usr/local/app
+    container_name: link_crawler
+    tty: true
